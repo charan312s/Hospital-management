@@ -11,7 +11,7 @@ const app = express();
 
 //CORS Configuration
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://hospital-queue-management.vercel.app" || "http://localhost:3000",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/hospital-queue', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://charan312s:CHARAN@312s@cluster0.s3tqv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
