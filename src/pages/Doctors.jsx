@@ -1,10 +1,10 @@
 // src/frontend/other/Doctors.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Search, Clock, Star, MapPin } from 'lucide-react';
 
 const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [doctors, setDoctors] = useState([
+  const doctors = useState([
     {
       id: 1,
       name: "Dr. Sarah Wilson",
