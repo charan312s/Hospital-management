@@ -2,7 +2,7 @@
 import axios from "axios";
 
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://hospital-queue-management.onrender.com/api';
 
 export const registerPatient = async (patientData) => {
   const response = await fetch(`${API_BASE_URL}/patients/register`, {
